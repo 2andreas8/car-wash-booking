@@ -11,6 +11,9 @@
 # Secrets (for the Docker/Postgres setup)
 .env
 
+# Maven build output
+target/
+
 # BlueJ files
 *.ctxt
 

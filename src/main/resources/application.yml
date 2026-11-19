@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: car-wash-booking
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${POSTGRES_DB:carwash}
+    username: ${POSTGRES_USER:carwash}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health
+
