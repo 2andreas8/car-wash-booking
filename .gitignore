@@ -4,6 +4,13 @@
 # Log file
 *.log
 
+# IDE
+.idea/
+*.iml
+
+# Secrets (for the Docker/Postgres setup)
+.env
+
 # BlueJ files
 *.ctxt
 
